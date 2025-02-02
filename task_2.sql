@@ -17,7 +17,7 @@ mycursor.execute("""
 print("Table created successfully!")
 
 mycursor.execute("""
-    CREATE TABLE books (
+    CREATE TABLE Books (
         book_id INT AUTO_INCREMENT PRIMARY KEY,
         title VARCHAR(130),
         author_id INT,
@@ -29,7 +29,7 @@ mycursor.execute("""
 print("Table created successfully!")
 
 mycursor.execute("""
-    CREATE TABLE customers (
+    CREATE TABLE Customers (
         customer_id INT AUTO_INCREMENT PRIMARY KEY,
         customer_name VARCHAR(215),
         email VARCHAR(215),
@@ -49,7 +49,7 @@ mycursor.execute("""
 print("Table created successfully!")
 
 mycursor.execute("""
-    CREATE TABLE Order_details (
+    CREATE TABLE Order_Details (
         orderdetailid INT AUTO_INCREMENT PRIMARY KEY,
         order_id INT,
         book_id INT,
